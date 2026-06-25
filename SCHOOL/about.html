@@ -71,7 +71,7 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li class="dropdown">
-            <a href="about.html" class="active">About</a>
+            <a href="about.html">About</a>
 
             <ul class="dropdown-menu">
               <li>
@@ -88,10 +88,15 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="academics.html">Academics</a>
+            <a href="academics.html" class="active">Academics</a>
             <ul class="dropdown-menu">
               <li>
                 <a href="curriculum.html">Curriculum</a>
+              </li>
+              <li>
+                <a href="curriculum.html#teaching-methodology"
+                  >Teaching Methodology</a
+                >
               </li>
             </ul>
           </li>
@@ -308,57 +313,47 @@
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        /* AOS */
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            duration: 1000,
+            once: true,
+          });
+        }
 
-  /* AOS */
-  if (typeof AOS !== "undefined") {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }
+        /* MOBILE MENU */
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");
 
-  /* MOBILE MENU */
-  const menuBtn = document.querySelector(".menu-btn");
-  const navLinks = document.querySelector(".nav-links");
+        if (menuBtn && navLinks) {
+          menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
 
-  if (menuBtn && navLinks) {
-    menuBtn.addEventListener("click", () => {
+            const icon = menuBtn.querySelector("i");
 
-      navLinks.classList.toggle("active");
+            icon.className = navLinks.classList.contains("active")
+              ? "fas fa-times"
+              : "fas fa-bars";
+          });
+        }
 
-      const icon = menuBtn.querySelector("i");
+        /* MOBILE DROPDOWNS */
+        const dropdowns = document.querySelectorAll(".dropdown");
 
-      icon.className = navLinks.classList.contains("active")
-        ? "fas fa-times"
-        : "fas fa-bars";
+        dropdowns.forEach((dropdown) => {
+          const link = dropdown.querySelector("a");
 
-    });
-  }
+          link.addEventListener("click", (e) => {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
 
-  /* MOBILE DROPDOWNS */
-  const dropdowns = document.querySelectorAll(".dropdown");
-
-  dropdowns.forEach((dropdown) => {
-
-    const link = dropdown.querySelector("a");
-
-    link.addEventListener("click", (e) => {
-
-      if (window.innerWidth <= 768) {
-
-        e.preventDefault();
-
-        dropdown.classList.toggle("active");
-
-      }
-
-    });
-
-  });
-
-});
-</script>
+              dropdown.classList.toggle("active");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
