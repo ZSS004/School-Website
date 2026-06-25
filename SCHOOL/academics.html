@@ -93,6 +93,11 @@
               <li>
                 <a href="curriculum.html">Curriculum</a>
               </li>
+              <li>
+                <a href="curriculum.html#teaching-methodology"
+                  >Teaching Methodology</a
+                >
+              </li>
             </ul>
           </li>
 
@@ -381,27 +386,27 @@
       </div>
     </footer>
     <script>
-  // Mobile Menu Optimization
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.querySelector(".menu-btn");
-    const navLinks = document.querySelector(".nav-links");
+      // Mobile Menu Optimization
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");
 
-    // Check if elements exist on the page before adding event listeners
-    if (menuBtn && navLinks) {
-      const icon = menuBtn.querySelector("i");
+        // Check if elements exist on the page before adding event listeners
+        if (menuBtn && navLinks) {
+          const icon = menuBtn.querySelector("i");
 
-      menuBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+          menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
 
-        // Clean ternary operator to swap icons smoothly
-        if (icon) {
-          icon.className = navLinks.classList.contains("active")
-            ? "fas fa-times"
-            : "fas fa-bars";
+            // Clean ternary operator to swap icons smoothly
+            if (icon) {
+              icon.className = navLinks.classList.contains("active")
+                ? "fas fa-times"
+                : "fas fa-bars";
+            }
+          });
         }
       });
-    }
-  });
-</script>
+    </script>
   </body>
 </html>
