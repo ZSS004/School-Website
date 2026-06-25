@@ -1,6 +1,6 @@
-/* ====================================
+/* 
    GLOBAL
-==================================== */
+    */
 
 * {
     margin: 0;
@@ -16,27 +16,27 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f8fbff;
     overflow-x: hidden;
-    color:#333;  /*--------------------------------------*/
+    color:#333;  
 }
 
 a {
     text-decoration: none;
-    color: inherit; /*------------------*/
+    color: inherit; 
 }
 
 img {
     max-width: 100%;
     display: block;
-    height: auto;/*---------------------*/
+    height: auto;
 }
 
 section {
     width: 100%;
 }
 
-/* ====================================
+/* 
    TOP BAR
-==================================== */
+ */
 
 .top-bar {
     position: fixed;
@@ -90,9 +90,9 @@ section {
     font-size: 18px;
 }
 
-/* ====================================
+/* 
    NAVBAR
-==================================== */
+ */
 
 .navbar {
     position: fixed;
@@ -153,9 +153,9 @@ section {
     color: #1E88E5;
 }
 
-/* ====================================
+/* 
    DROPDOWN
-==================================== */
+ */
 
 .dropdown {
     position: relative;
@@ -170,7 +170,7 @@ section {
 .dropdown>a::after {
     content: "▼";
     font-size: 10px;
-    transition:.3s;/*-----------------*/
+    transition:.3s;
 
 }
 .dropdown:hover>a::after{
@@ -240,9 +240,9 @@ section {
     color:#1E88E5;
 }
 
-/* ====================================
+/* 
    MOBILE MENU BUTTON
-==================================== */
+ */
 
 .menu-btn{
     display:none;
@@ -251,9 +251,9 @@ section {
     color:#333;
 }
 
-/* ====================================
+/* 
    TABLET
-==================================== */
+ */
 
 @media (max-width:992px){
 
@@ -284,9 +284,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    MOBILE
-==================================== */
+ */
 
 @media (max-width:768px){
 
@@ -329,7 +329,7 @@ section {
 
     .nav-links{
         position:fixed;
-        top:110px; /* 40px top bar + 70px navbar */
+        top:110px; 
         left:0;
 
         width:100%;
@@ -413,9 +413,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    SMALL MOBILE
-==================================== */
+ */
 
 @media (max-width:480px){
 
@@ -455,10 +455,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    PAGE OFFSET DESKTOP
-==================================== */
-
+*/
 .hero,
 .about-hero,
 .admission-hero,
@@ -467,9 +466,9 @@ section {
     margin-top:127px;
 }
 
-/* ====================================
+/* 
    HERO
-==================================== */
+ */
 
 .hero {
     position: relative;
@@ -554,51 +553,48 @@ section {
     box-shadow: 0 10px 25px rgba(30, 136, 229, .4);
 }
 
-/* ====================================
+/* 
    HERO BUTTON FIX
-==================================== */
+ */
 
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.hero-buttons a{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    min-width:180px;
-    padding:14px 28px;
-
-    text-align:center;
-    white-space:nowrap;
+.hero-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    padding: 14px 28px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none; 
 }
 
-/* Mobile */
-
-@media (max-width:768px){
-
-    .hero-buttons{
-        flex-direction:column;
-        width:100%;
-        gap:15px;
+/* Mobile & Small Screens */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        gap: 12px; 
     }
 
-    .hero-buttons a{
-        width:100%;
-        max-width:250px;
+    .hero-buttons a {
+        position: static !important; 
+        margin: 0 !important; 
+        
+        width: 80%; 
+        max-width: 250px;
+        box-sizing: border-box; 
     }
 }
-
 /*enquiry popup*/
-
-/* ====================================
-   ENQUIRY POPUP
-==================================== */
 
 .enquiry-popup {
     position: fixed;
@@ -796,9 +792,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    NOTICE BAR
-==================================== */
+ */
 
 .notice-bar {
     width: 100%;
@@ -855,9 +851,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    COMMON SECTION TITLE
-==================================== */
+ */
 
 .section-title {
     text-align: center;
@@ -880,9 +876,9 @@ section {
     color: #fff;
 }
 
-/* ====================================
+/* 
    HIGHLIGHTS
-==================================== */
+ */
 
 .highlights {
     padding: 100px 8%;
@@ -923,9 +919,9 @@ section {
     color: #555;
 }
 
-/* ====================================
+/* 
    FACILITIES
-==================================== */
+ */
 
 .facilities {
     padding: 100px 8%;
@@ -971,9 +967,9 @@ section {
     line-height: 1.7;
 }
 
-/* ====================================
+/* 
    ACHIEVEMENTS
-==================================== */
+ */
 
 .achievements {
     padding: 100px 8%;
@@ -1006,9 +1002,9 @@ section {
     color: rgba(255, 255, 255, .9);
 }
 
-/* ====================================
+/* 
    RESPONSIVE
-==================================== */
+ */
 
 @media (max-width:1024px) {
 
@@ -1050,9 +1046,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    ANNOUNCEMENTS + GALLERY
-==================================== */
+ */
 
 .announcement-gallery {
     padding: 100px 8%;
@@ -1088,9 +1084,9 @@ section {
     border-radius: 5px;
 }
 
-/* ====================================
+/* 
    ANNOUNCEMENTS
-==================================== */
+ */
 
 .announcement-box {
     height: 500px;
@@ -1148,9 +1144,9 @@ section {
     border-radius: 20px;
 }
 
-/* ====================================
+/* 
    GALLERY
-==================================== */
+ */
 
 .gallery-grid {
     display: grid;
@@ -1174,9 +1170,9 @@ section {
     transform: scale(1.05);
 }
 
-/* ====================================
+/* 
    NEWS & EVENTS
-==================================== */
+ */
 
 .news-events {
     padding: 100px 8%;
@@ -1258,9 +1254,9 @@ section {
     color: #1565C0;
 }
 
-/* ====================================
+/* 
    ADMISSION CTA
-==================================== */
+ */
 
 .admission-cta {
     padding: 100px 8%;
@@ -1322,9 +1318,9 @@ section {
     transform: translateY(-3px);
 }
 
-/* ====================================
+/* 
    TABLET
-==================================== */
+ */
 
 @media (max-width:1024px) {
 
@@ -1337,9 +1333,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    MOBILE
-==================================== */
+ */
 
 @media (max-width:768px) {
 
@@ -1377,9 +1373,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    SMALL MOBILE
-==================================== */
+ */
 
 @media (max-width:480px) {
 
@@ -1400,9 +1396,9 @@ section {
     }
 }
 
-/* ====================================
+/* 
    FOOTER
-==================================== */
+ */
 
 footer {
     background: #0f172a;
@@ -1447,9 +1443,9 @@ footer {
     padding-left: 4px;
 }
 
-/* ====================================
+/* 
    SOCIAL ICONS
-==================================== */
+ */
 
 .social-icons {
     display: flex;
@@ -1480,9 +1476,9 @@ footer {
     transform: translateY(-4px);
 }
 
-/* ====================================
+/* 
    COPYRIGHT
-==================================== */
+ */
 
 .copyright {
     padding: 20px;
@@ -1503,9 +1499,9 @@ footer {
     color: #fff;
 }
 
-/* ====================================
+/* 
    TABLET
-==================================== */
+ */
 
 @media (max-width:1024px) {
 
@@ -1514,9 +1510,9 @@ footer {
     }
 }
 
-/* ====================================
+/* 
    MOBILE
-==================================== */
+ */
 
 @media (max-width:768px) {
 
@@ -1536,9 +1532,9 @@ footer {
 }
 
 
-/* ====================================
+/* 
    ABOUT HERO BANNER
-==================================== */
+ */
 
 .about-hero {
     position: relative;
@@ -1637,9 +1633,9 @@ footer {
     }
 }
 
-/* ====================================
+/* 
    ABOUT SCHOOL
-==================================== */
+ */
 
 .about-school {
     padding: 100px 8%;
@@ -1681,9 +1677,9 @@ footer {
     margin-bottom: 15px;
 }
 
-/* ====================================
+/* 
    SECTION TITLE
-==================================== */
+ */
 
 .section-title {
     text-align: center;
@@ -1700,9 +1696,9 @@ footer {
     color: #1E88E5;
 }
 
-/* ====================================
+/* 
    JOURNEY
-==================================== */
+ */
 
 .journey {
     padding: 100px 8%;
@@ -1737,9 +1733,9 @@ footer {
     margin-bottom: 10px;
 }
 
-/* ====================================
+/* 
    PRINCIPAL MESSAGE
-==================================== */
+ */
 
 .principal-preview {
     padding: 100px 8%;
@@ -1806,9 +1802,9 @@ footer {
     transform: translateY(-2px);
 }
 
-/* ====================================
+/* 
    WHY CHOOSE US
-==================================== */
+ */
 
 .why-choose {
     padding: 100px 8%;
@@ -1854,9 +1850,9 @@ footer {
     line-height: 1.7;
 }
 
-/* ====================================
+/* 
    CAMPUS LIFE
-==================================== */
+ */
 
 .campus-life {
     padding: 100px 8%;
@@ -1884,9 +1880,9 @@ footer {
     transform: scale(1.04);
 }
 
-/* ====================================
+/* 
    CTA
-==================================== */
+ */
 
 .about-cta {
     padding: 100px 8%;
@@ -1930,9 +1926,9 @@ footer {
     transform: translateY(-3px);
 }
 
-/* ====================================
+/* 
    RESPONSIVE
-==================================== */
+ */
 
 @media(max-width:992px) {
 
@@ -2019,9 +2015,9 @@ footer {
     }
 }
 
-/* ====================================
+/* 
    ACADEMICS PAGE
-==================================== */
+ */
 
 .academics-page section {
     padding: 100px 8%;
@@ -2214,9 +2210,9 @@ footer {
     }
 }
 
-/* ====================================
+/* 
    CURRICULUM PAGE
-==================================== */
+ */
 
 .curriculum-page section {
     padding: 100px 8%;
@@ -2386,11 +2382,11 @@ footer {
 
 /*Admission*/
 
-/* ===================================
+/* 
    ADMISSION PAGE (COMPONENTS ONLY)
-=================================== */
+ */
 
-/* --- Universal Section Titles --- */
+/*  Universal Section Titles  */
 .section-title {
     text-align: center;
     margin-bottom: 60px;
@@ -2424,7 +2420,7 @@ footer {
     margin-top: 15px;
 }
 
-/* --- Admission Process Section --- */
+/*  Admission Process Section  */
 .admission-process {
     padding: 100px 8%;
     background: #fff;
@@ -2489,7 +2485,7 @@ footer {
     animation: pulse 2s infinite;
 }
 
-/* --- Eligibility Section --- */
+/*  Eligibility Section  */
 .eligibility {
     padding: 100px 8%;
     background: #f8fbff;
@@ -2533,7 +2529,7 @@ footer {
     line-height: 1.5;
 }
 
-/* --- Documents Required Section --- */
+/*  Documents Required Section  */
 .documents {
     padding: 100px 8%;
     background: #fff;
@@ -2573,7 +2569,7 @@ footer {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
 
-/* --- Enquiry Form Section --- */
+/*  Enquiry Form Section  */
 .enquiry-section {
     padding: 100px 8%;
     background: #f8fbff;
@@ -2646,7 +2642,7 @@ footer {
     background: #1565C0;
 }
 
-/* --- Animations --- */
+/*  Animations  */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -2664,7 +2660,7 @@ footer {
     }
 }
 
-/* --- Responsive Media Queries --- */
+/*  Responsive Media Queries  */
 @media (max-width: 1024px) {
     .process-flow {
         flex-direction: column;
@@ -2872,9 +2868,9 @@ footer {
     }
 }
 
-/* ===================================
+/* 
    CONTACT PAGE
-=================================== */
+ */
 
 .contact-hero {
     height: 60vh;
@@ -3020,9 +3016,9 @@ footer {
 }
 
 /*Director's Section*/
-/* ===========================
+/* 
    DIRECTOR HERO
-=========================== */
+ */
 
 .director-hero {
     height: 60vh;
@@ -3052,9 +3048,9 @@ footer {
     opacity: .95;
 }
 
-/* ===========================
+/* 
    DIRECTOR MESSAGE SECTION
-=========================== */
+ */
 
 .director-section {
     padding: 100px 8%;
@@ -3107,9 +3103,9 @@ footer {
     color: #777;
 }
 
-/* ===========================
+/* 
    COMMON SECTION TITLE
-=========================== */
+ */
 
 .section-title {
     text-align: center;
@@ -3121,9 +3117,9 @@ footer {
     color: #1E88E5;
 }
 
-/* ===========================
+/* 
    DIRECTOR JOURNEY
-=========================== */
+ */
 
 .journey-section {
     padding: 100px 8%;
@@ -3179,9 +3175,9 @@ footer {
     line-height: 1.8;
 }
 
-/* ===========================
+/* 
    ACHIEVEMENTS
-=========================== */
+ */
 
 .director-achievements {
     padding: 100px 8%;
@@ -3218,9 +3214,9 @@ footer {
     font-weight: 500;
 }
 
-/* ===========================
+/* 
    CTA
-=========================== */
+ */
 
 .director-cta {
     padding: 100px 8%;
@@ -3255,9 +3251,9 @@ footer {
     box-shadow: 0 10px 25px rgba(255, 193, 7, .35);
 }
 
-/* ===========================
+/* 
    RESPONSIVE
-=========================== */
+ */
 
 @media(max-width:992px) {
 
@@ -3523,12 +3519,11 @@ footer {
 }
 
 
-/* ==========================================================================
+/* 
    MISSION & VISION PAGE SPECIFIC STYLES
-   ========================================================================== */
+    */
 
-/* Hero Section 
-   ========================= */
+/* Hero Section  */
 .about-hero {
     position: relative;
     width: 100%;
@@ -3580,8 +3575,7 @@ footer {
     line-height: 1.6;
 }
 
-/* Vision & Mission Cards 
-   ========================= */
+/* Vision & Mission Cards  */
 .vision-mission {
     padding: 100px 8%;
     background: #fff;
@@ -3625,8 +3619,7 @@ footer {
     font-size: 16px;
 }
 
-/* Core Values 
-   ========================= */
+/* Core Values  */
 .core-values {
     padding: 100px 8%;
     background: #f8fbff;
@@ -3670,8 +3663,7 @@ footer {
     line-height: 1.8;
 }
 
-/* Educational Philosophy & Future Goals
-   ===================================== */
+/* Educational Philosophy & Future Goals */
 .philosophy,
 .about-history {
     padding: 90px 8%;
@@ -3694,8 +3686,7 @@ footer {
     position: relative;
 }
 
-/* Call To Action (Admission CTA) 
-   ============================== */
+/* Call To Action (Admission CTA)  */
 .admission-cta {
     padding: 100px 8%;
     background: #1E88E5;
@@ -3739,9 +3730,9 @@ footer {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ==========================================================================
+/* 
    RESPONSIVE DESIGN MEDIA QUERIES
-   ========================================================================== */
+    */
 
 @media(max-width: 992px) {
 
@@ -3791,9 +3782,9 @@ footer {
 
 
 
-/* ===================================
+/* 
    FAQ SECTION
-=================================== */
+ */
 
 .faq {
     padding: 100px 8%;
@@ -3801,8 +3792,6 @@ footer {
     /* Alternating clean white background */
 }
 
-/* Note: `.section-title` style is already defined in your admission page CSS, 
-   so it will automatically format beautifully here as well! */
 
 .faq-item {
     max-width: 850px;
@@ -3849,7 +3838,7 @@ footer {
     line-height: 1.7;
 }
 
-/* --- FAQ Responsive adjustments --- */
+/*  FAQ Responsive adjustments  */
 @media (max-width: 768px) {
     .faq {
         padding: 60px 5%;
